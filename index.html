@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA$H COIN</title>
+    <style>
+        body {
+            background-color: #003300; /* Dark green background */
+            color: #00FF00; /* Fluorescent green text */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .box {
+            border: 2px solid #00FF00;
+            padding: 15px;
+            margin: 10px 0;
+            position: relative;
+        }
+        .highlight {
+            color: #FFFF00; /* Brighter green highlight */
+            font-weight: bold;
+        }
+        #box11 a {
+            color: #00FF00;
+            text-decoration: none;
+        }
+        #box11 a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>CA$H COIN</h1>
+    <div id="box1" class="box">1. Current Price $1.0002317 each</div>
+    <div id="box2" class="box">2. 100% Free airdrop just enter email and polygon receive wallet address</div>
+    <div id="box3" class="box">
+        3. $40 = 10 Pizza Card<br>
+        400 = 100 Pizza<br>
+        4000 = 1000 Pizza<br>
+        400,000 = 100,000 Pizza<br>
+        And + Keep all your crypto
+    </div>
+    <div id="box4" class="box">4. Buy as often as you like get free pizza every time and keep all your CRYPTO</div>
+    <div id="box5" class="box">5. 300% Price increase expected. Buy now and profit</div>
+    <div id="box6" class="box">6. All purchases except for airdrop get an Entry to win</div>
+    <div id="box7" class="box">7. $1,100,000 Grand prize</div>
+    <div id="box8" class="box">8. 3 2nd prizes of $100,000</div>
+    <div id="box9" class="box">9. 20 3rd place of $100</div>
+    <div id="box10" class="box">10. Limited time offer</div>
+    <div id="box11" class="box">
+        <a href="https://google.ca" target="_blank">11. Click Here Play PIZZA BLASTER WIN EVEN MORE</a>
+    </div>
+    <div id="box12" class="box">12. Buy now before price goes up</div>
+
+    <script>
+        const boxes = document.querySelectorAll('.box');
+        let currentIndex = 0;
+
+        function highlightBox() {
+            // Remove highlight from all boxes
+            boxes.forEach(box => box.classList.remove('highlight'));
+            // Add highlight to the current box
+            boxes[currentIndex].classList.add('highlight');
+            // Move to the next box
+            currentIndex = (currentIndex + 1) % boxes.length;
+        }
+
+        // Run the highlight function every 3 seconds
+        setInterval(highlightBox, 3000);
+
+        // Initialize the first highlight
+        highlightBox();
+    </script>
+</body>
+</html> 
